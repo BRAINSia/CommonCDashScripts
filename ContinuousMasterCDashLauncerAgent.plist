@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>johnsonhj_CDashContinuousDashboards</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/ipldev/sharedopt/CommonCDashScripts/johnsonhj/MasterDoIt.sh</string>
+		<string>nightly</string>
+	</array>
+	<key>StartInterval</key>
+	<integer>3600</integer>
+	<key>WorkingDirectory</key>
+	<string>/tmp</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/johnsonhj_CDashContinuousDashboards.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/johnsonhj_CDashContinuousDashboards.out</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>CC</key>
+		<string>/dev/null</string>
+		<key>CXX</key>
+		<string>/dev/null</string>
+	</dict>
+	<key>Nice</key>
+	<integer>20</integer>
+	<key>Disabled</key>
+	<false/>
+	<key>LowPriorityIO</key>
+	<true/>
+	<key>HardResourceLimits</key>
+	<dict>
+		<key>Core</key>
+		<integer>0</integer>
+		<key>CPU</key>
+		<integer>82800</integer>
+	</dict>
+</dict>
+</plist>
